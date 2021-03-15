@@ -25,7 +25,12 @@ if($mysql->connect_error){
 
     // funcion que crea las tablas 
     function createTables($mysql,$cial){
-        $sql1 = "create table if not exists".$cial."registro";
+        $sql1 = "create table if not exists".$cial."registro(
+                tipo varchar(20) default ('Salida'),
+                motivo varchar(20),
+                pers_auto varchar(20),
+                fecha datetime
+        );";
         
         $result = $mysql->query($sql1);
 
@@ -38,3 +43,5 @@ if($mysql->connect_error){
 
     
 }
+
+$mysql->close();

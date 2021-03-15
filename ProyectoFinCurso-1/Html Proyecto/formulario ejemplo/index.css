@@ -1,4 +1,10 @@
+@font-face {
+  font-family: fuenteprueba;
+  src: url(Mermaid1001.ttf);
+}
+
 body{
+    font-family: fuenteprueba;
     background:#59ABE3;
     margin:0
 }
@@ -12,7 +18,7 @@ body{
     padding:20px 30px;
     max-width:calc(100vw - 40px);
     box-sizing:border-box;
-    font-family:'Montserrat',sans-serif;
+    font-family: fuenteprueba
     position:relative
 }
 

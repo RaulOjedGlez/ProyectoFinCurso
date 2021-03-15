@@ -1,4 +1,10 @@
+@font-face {
+  font-family: fuenteprueba;
+  src: url(Mermaid1001.ttf);
+}
+
 body{
+    font-family: fuenteprueba;
     padding: 0;
     margin:0;
     overflow:hidden;   

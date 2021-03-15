@@ -1,4 +1,11 @@
+@font-face {
+  font-family: fuenteprueba;
+  src: url(../fotos/Mermaid1001.ttf);
+}
+
+
 body{
+    font-family: fuenteprueba;
     padding: 0;
     margin:0;
     overflow:hidden;   
@@ -16,7 +23,7 @@ header{
     width: 100%; 
     height:10%;
     text-align:center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Cambiar al gusto*/ 
+    font-family: fuenteprueba; /* Cambiar al gusto*/ 
 } 
 
 header p{
@@ -36,20 +43,20 @@ header p{
     overflow: auto;
     float:left;
     border: 2px dashed black;
-    width: 30%;
-    padding: 10px;
-    margin-top: 7%;
-    margin-left: 13%;
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    padding-bottom: 2%;
 }
 
 #container2{
     overflow: hidden;
     float:left;
     border: 2px dashed black;
-    width: 30%;
+    width: %;
     padding: 10px;
     margin-top: 7%;
-    margin-left: 13%;
+    margin-left: 25%;
     display: none;
 }
 
@@ -63,6 +70,8 @@ header p{
     padding:20px 30px;
     box-sizing:border-box;
     font-family:'Montserrat',sans-serif;
+    display: block;
+    margin: auto;
 }
 
 input{
