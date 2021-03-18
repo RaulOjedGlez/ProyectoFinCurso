@@ -15,13 +15,15 @@ if($mysqli->connect_error){
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Buscar alumno </title>
         <link rel="stylesheet" href="../src_css/registroSalidas.css">
-        <script type="text/javascript">
+      
+       <!-- <script type="text/javascript">
             $(function() {
                 $('button').click(function() {
                     $.get('../src_php/buscarAlumno.php');
                 });
             });
         </script>
+        -->
 
     </head>
 
@@ -33,7 +35,7 @@ if($mysqli->connect_error){
             <label for="alumno">Nombre:</label>
             <input type="text" id="alumno" name="alumno">
 
-            <button type="submit" id="buscar">Buscar alumno</button>
+            <button type="submit" class="buscar">Buscar alumno</button>
         </form>
     </div>
 
@@ -53,7 +55,7 @@ if($mysqli->connect_error){
             <thead>
             <tr>
                 <th>Nombre</th>
-                <th colspan="2" >apellidos</th>
+                <th colspan="2">apellidos</th>
                 <th>Dni</th>
             </tr>
             </thead>
@@ -65,7 +67,9 @@ if($mysqli->connect_error){
             </table>
                 <?php
             }else{
-                echo"No hay alumnos con ese nombre";
+                echo"<script type='text/javascript'>
+                    alert('No hay alumnos con ese nombre, revise los datos.');
+                    </script>";
             }
             ?>
 
@@ -74,7 +78,7 @@ if($mysqli->connect_error){
         }
         ?>
     </div>
-
+       
 
     </html>
 

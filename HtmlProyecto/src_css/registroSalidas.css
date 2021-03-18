@@ -100,7 +100,7 @@ input{
     margin:auto;
 }
 
-#buscar{
+.buscar{
     padding:8px 12px;
     margin:8px 0 0;
     font-family:fuenteprueba;
@@ -108,13 +108,15 @@ input{
     background:0;
     color:#5a5a6e;
     cursor:pointer;
-    transition:all .3s
+    transition:all .3s;
+    text-decoration: none;
 }
 
-#buscar:hover{
+.buscar:hover{
     background:#78788c;
     color:#fff
 }
+
 #registrosalidas:hover{
     background:#78788c;
     color:#fff
@@ -144,4 +146,7 @@ tbody :nth-child(odd) td {
 }
 tbody :nth-child(even) td {
     background-color:rgb(247, 247, 247);
+}
+.celda{
+    background-color:inherit;
 }
