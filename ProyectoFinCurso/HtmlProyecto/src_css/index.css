@@ -1,0 +1,97 @@
+@font-face {
+	font-family: fuenteprueba;
+	src: url(Mermaid1001.ttf);
+}
+
+body{
+	font-family: fuenteprueba;
+	padding: 0;
+	margin:0;
+	overflow:hidden;
+	/*background: linear-gradient(to right,white 40%,rgb(13, 13, 228) 100%);*/
+	background: linear-gradient(217deg, rgba(220, 218, 250, 0.8), rgba(164, 147, 240, 0) 70.71%),
+	linear-gradient(127deg, rgba(67, 177, 250, 0.8), rgba(0,255,0,0) 70.71%),
+	linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+h1 {
+	font-weight: bold;
+	margin: 0;
+}
+
+h2 {
+	text-align: center;
+}
+
+p {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 30px;
+}
+
+span {
+	font-size: 12px;
+}
+
+a {
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
+
+button {
+	border-radius: 20px;
+	border: none;
+	background-color: rgba(220, 218, 250, 0.8);
+	color: black;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 500ms ease-in;
+	outline: none;
+}
+
+button:hover{
+	transform: scale(1.10);
+
+}
+
+form {
+
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+
+.inicio {
+	background: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	top: 30%;
+	height: 40%;
+	transition: all 0.6s ease-in-out;
+	box-shadow: 5px 10px 8px #000000;
+	left: 30%;
+	width: 40%;
+	z-index: 2;
+}
+
