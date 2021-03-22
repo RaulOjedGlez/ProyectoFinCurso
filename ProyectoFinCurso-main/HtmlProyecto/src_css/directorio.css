@@ -22,16 +22,15 @@ header{
 }
 
 .main{
-    padding:2%;
+    margin-top: 1.5%;
     height: 50%;
     width: 60%;
-    margin-top: 7%;
     margin-left: 20%;
-    border: solid 1px black;
+   
 }
 
 .container{
-    padding: 2%;
+    padding: 1%;
     border:solid 1px black;
     width: 60%;
     height: 50%;
